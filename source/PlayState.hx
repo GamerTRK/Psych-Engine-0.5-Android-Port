@@ -2727,17 +2727,17 @@ class PlayState extends MusicBeatState
 			{
 				playerStrums.forEach(function(spr:FlxSprite)
 				{
-					spr.x = ((FlxG.width / 12) - (spr.width / 7)) + (Math.sin(elapsed + (spr.ID)) * 500);
+					spr.x = ((FlxG.width / 12) - (spr.width / 7)) + (Math.sin( + (spr.ID)) * 500);
 					spr.x += 500; 
-					spr.y += Math.sin(elapsed) * Math.random();
-					spr.y -= Math.sin(elapsed) * 1.3;
+					spr.y += Math.sin() * Math.random();
+					spr.y -= Math.sin() * 1.3;
 				});
 				opponentStrums.forEach(function(spr:FlxSprite)
 				{
-					spr.x = ((FlxG.width / 12) - (spr.width / 7)) + (Math.sin((elapsed + (spr.ID )) * 2) * 500);
+					spr.x = ((FlxG.width / 12) - (spr.width / 7)) + (Math.sin(( + (spr.ID )) * 2) * 500);
 					spr.x += 500; 
-					spr.y += Math.sin(elapsed) * Math.random();
-					spr.y -= Math.sin(elapsed) * 1.3;
+					spr.y += Math.sin() * Math.random();
+					spr.y -= Math.sin() * 1.3;
 				});
 			}
 					if(curStage == 'philly') {
